@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - var(--gnb-height));
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.625rem;
+}
+
+.wrapper video {
+  height: 100vh;
+  object-fit: cover;
+}
