@@ -1,8 +1,6 @@
 import GNB from '@/components/GNB';
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { sansKr } from './fonts';
 
 export const metadata = {
   title: '노래🎶 하지☀️',
@@ -26,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" data-theme="night">
-      <body className={inter.className}>
+      <body className={sansKr.className}>
         <GNB />
         {children}
       </body>
