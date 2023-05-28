@@ -1,51 +1,67 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import css from './Hero.module.css';
+import Image from 'next/image';
+
+gsap.registerPlugin(ScrollTrigger);
+const NUM_OF_FRAMES = 70;
+const STEPS = ['Hello', 'My', 'Name', 'Is', 'Rahul', 'jangid', 'Thanks :)'];
 
 const Hero = () => {
-  const ref = useRef<HTMLVideoElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const scrollHeight = NUM_OF_FRAMES * 1000;
 
-  useEffect(() => {
-    if (!ref.current) return;
+  const onLoadedVideoMetadata = () => {
+    if (!imageRef.current) return;
 
-    console.log(ref.current);
-    gsap.registerPlugin(ScrollTrigger);
-    ref.current.pause();
-    ref.current.currentTime = 0;
-    // 📍 pin point
-    // ScrollTrigger.create({
-    //   trigger: '.video-wrapper',
-    //   start: 'top top',
-    //   scrub: 0,
-    //   pin: true,
-    //   onUpdate: self => {
-    //     if (!ref.current) return;
-    //     ref.current.currentTime =
-    //       ref.current!.duration * parseInt(self.progress.toFixed(2));
-    //   },
-    // });
-  }, []);
+    const t = gsap.to(imageRef.current, {
+      attr: {
+        src: `/assets/images/scene${NUM_OF_FRAMES.toString().padStart(
+          5,
+          '0'
+        )}.jpeg`,
+      },
+
+      scrollTrigger: {
+        trigger: '.video-wrapper',
+        start: 'top top',
+        end: () => `+=${scrollHeight}`,
+        scrub: true,
+        pin: true,
+        onUpdate: self => {
+          const frame = Math.round(self.progress * NUM_OF_FRAMES);
+          imageRef.current!.src = `/assets/images/scene${frame
+            .toString()
+            .padStart(5, '0')}.jpeg`;
+        },
+      },
+    });
+
+    // Clean up before unmounting the component/page
+    return () => {
+      t.kill();
+      ScrollTrigger.getAll().forEach(e => e.kill());
+    };
+  };
+
+  useEffect(onLoadedVideoMetadata, [scrollHeight]);
 
   return (
-    <section className={`${css.wrapper} w-screen`}>
-      <div className="video-wrapper">
-        <video
-          ref={ref}
-          className="landing_vid"
-          playsInline
-          autoPlay
-          muted
-          loop
-          preload="preload"
-        >
-          <source
-            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-            type="video/mp4"
-          />
-        </video>
+    <section className="w-screen relative">
+      <div className={`${css.wrapper} video-wrapper sticky top-[88px]`}>
+        <Image
+          src="/assets/images/scene00001.jpeg"
+          alt="hero"
+          width={1920}
+          height={1080}
+          data-speed="0.2"
+          className="landing_vid object-cover w-full h-full"
+          ref={imageRef}
+        />
       </div>
+      <div style={{ height: scrollHeight }} />
     </section>
   );
 };

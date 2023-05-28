@@ -5,7 +5,7 @@ import { Footer as _Footer } from 'react-daisyui';
 
 const Footer = () => {
   return (
-    <footer className="w-screen p-10 bg-neutral text-neutral-content ">
+    <footer className="w-screen p-10 bg-neutral text-neutral-content text-center">
       © 2023, 여름 하지
     </footer>
   );

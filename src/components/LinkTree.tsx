@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { Button, Hero } from 'react-daisyui';
+import CountDown from './CountDown';
 
 const LinkTree = () => {
   return (
@@ -13,18 +14,11 @@ const LinkTree = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <Hero.Content className="text-center">
-        <div className="w-full">
-          <h1 className="text-5xl font-bold">Hello there</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
-
-          <Button color="primary">🎫 티켓 구매하기</Button>
-        </div>
-      </Hero.Content>
+      <div className="w-full flex flex-col gap-4 items-center text-center">
+        <h1 className="text-5xl font-bold">Hello there</h1>
+        <CountDown />
+        <Button color="primary">🎫 티켓 구매하기</Button>
+      </div>
     </Hero>
   );
 };
