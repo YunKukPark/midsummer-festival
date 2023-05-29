@@ -8,7 +8,7 @@ export const sansKr = Noto_Sans_KR({
 });
 
 export const dohyeon = Do_Hyeon({
-  weight: '400',
+  weight: ['400'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-dohyeon',
