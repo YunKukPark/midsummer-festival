@@ -14,3 +14,22 @@
   height: 100vh;
   object-fit: cover;
 }
+
+.heroText {
+  top: 33.333333%;
+  padding-top: 4rem /* 64px */;
+  font-size: 3.75rem /* 60px */;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+@media screen and (min-width: 768px) {
+  .heroText {
+    font-size: 8rem;
+    line-height: 1.6;
+  }
+}

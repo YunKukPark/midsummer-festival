@@ -20,9 +20,13 @@ const STEPS = [
   '여름',
   '🎹',
   '하지',
-  '☀️ 여름 🎹 하지',
+  '☀️여름 🎹하지',
   '🏖️ MIDNIGHT',
   '🎏 SUMMER FESTIVAL',
+  '✨ 지은진',
+  '🌊🐦 물수제비',
+  '👘🤯 버르장머리',
+  '🎉 2023.06.24',
 ];
 
 const Hero = () => {
@@ -118,7 +122,7 @@ const Hero = () => {
           <h2
             key={step}
             ref={el => (stepRefs.current[i] = el!)}
-            className={`${dohyeon.className} text-center text-white text-6xl py-16 font-bold top-1/3 md:text-9xl`}
+            className={`${dohyeon.className} ${css.heroText}`}
           >
             {step}
           </h2>
