@@ -15,7 +15,7 @@ const LinkTree = () => {
       }}
     >
       <div className="w-full flex flex-col gap-4 items-center text-center">
-        <h1 className="text-5xl font-bold">Hello there</h1>
+        <h1 className="text-5xl font-bold">곧, 자리가 마감돼요</h1>
         <CountDown />
         <Button color="primary">🎫 티켓 구매하기</Button>
       </div>

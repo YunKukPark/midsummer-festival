@@ -1,9 +1,8 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import css from './Hero.module.css';
-import Image from 'next/image';
 import { dohyeon } from '@/app/fonts';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +26,7 @@ const STEPS = [
 ];
 
 const Hero = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const stepRefs = useRef<HTMLDivElement[]>([]);
 
@@ -100,6 +100,7 @@ const Hero = () => {
   return (
     <section className="w-screen relative">
       <div className={`${css.wrapper} video-wrapper sticky top-[88px]`}>
+        {/* <canvas id="video-canvas" width={1920} height={1080} ref={canvasRef} /> */}
         {/* TODO: 이미지 최적화 */}
         <img
           ref={imageRef}
