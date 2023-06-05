@@ -34,10 +34,30 @@ const Hero = () => {
   const imageRef = useRef<HTMLImageElement>(null);
   const stepRefs = useRef<HTMLDivElement[]>([]);
 
+  const arr = [1, 2, 3];
+
+  const doubled = arr.map(v => v * 2);
+
   const scrollHeight = FRAME.total * FRAME.scrollPerFrame;
 
   const setCurrentImage = () => {
-    if (!imageRef.current) return;
+    if (!canvasRef.current) return;
+    const ctx = canvasRef.current.getContext('2d');
+
+    const img = new Image();
+    img.src = `/assets/images/scene${FRAME.total
+      .toString()
+      .padStart(5, '0')}.jpeg`;
+
+    img.onload = function () {
+      ctx?.drawImage(
+        img,
+        0,
+        0,
+        canvasRef.current!.width,
+        canvasRef.current!.height
+      );
+    };
 
     const t = gsap.to(imageRef.current, {
       attr: {
@@ -55,10 +75,8 @@ const Hero = () => {
           const [min, max] = SCENE_INCLUSIVE_RANGE;
           const progress = Math.round(self.progress * FRAME.total);
           const currentSequence = Math.floor(progress * FRAME.rate + 1);
-
           if (currentSequence <= min || currentSequence >= max) return;
-
-          imageRef.current!.src = `/assets/images/scene${currentSequence
+          img.src = `/assets/images/scene${currentSequence
             .toString()
             .padStart(5, '0')}.jpeg`;
         },
@@ -72,14 +90,6 @@ const Hero = () => {
     };
   };
 
-  const onErrorImage = (e: React.SyntheticEvent<HTMLImageElement>) => {
-    const [, max] = SCENE_INCLUSIVE_RANGE;
-    e.currentTarget.onerror = null;
-    e.currentTarget.src = `/assets/images/scene${max
-      .toString()
-      .padStart(5, '0')}.jpeg`;
-  };
-
   useEffect(setCurrentImage, [scrollHeight]);
   useEffect(() => {
     stepRefs.current.forEach((step, i) => {
@@ -90,7 +100,7 @@ const Hero = () => {
           scrollTrigger: {
             trigger: step,
             start: '-=100 center',
-            end: '+=500',
+            end: 'bottom center',
             scrub: true,
             toggleActions: 'play none none reverse', // This line controls the fade in and out
           },
@@ -104,16 +114,12 @@ const Hero = () => {
   return (
     <section className="w-screen relative">
       <div className={`${css.wrapper} video-wrapper sticky top-[88px]`}>
-        {/* <canvas id="video-canvas" width={1920} height={1080} ref={canvasRef} /> */}
-        {/* TODO: 이미지 최적화 */}
-        <img
-          ref={imageRef}
+        <canvas
+          id="video-canvas"
           width={1920}
           height={1080}
-          src="/assets/images/scene00001.jpeg"
-          alt="hero"
+          ref={canvasRef}
           className="landing_vid object-cover w-full h-full"
-          onError={onErrorImage}
         />
       </div>
       {/* TODO: component 분리 */}

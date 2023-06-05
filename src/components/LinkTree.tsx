@@ -8,14 +8,14 @@ const LinkTree = () => {
     <Hero
       className="w-screen px-6 py-8"
       style={{
-        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/1200/500')`,
+        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/yunseul.jpg')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
     >
       <div className="w-full flex flex-col gap-4 items-center text-center">
-        <h1 className="text-5xl font-bold">곧, 자리가 마감돼요</h1>
+        <h1 className="text-2xl font-bold md:text-5xl">곧, 자리가 마감돼요</h1>
         <CountDown />
         <Button color="primary">🎫 티켓 구매하기</Button>
       </div>
