@@ -74,18 +74,11 @@ const LINEUP_INFO = [
         artist: '윤하',
       },
     ],
-    session: {
-      firstGuitar: '예준 🎸',
-      secondGuitar: '혁균 🪕',
-      bass: '',
-      drum: '',
-      keyboard: '주영 🎹',
-      vocal: '지은, 은진 🎤',
-    },
+    member: ['지은', '은진', '예준', '혁균', '주영'],
   },
   {
     id: '2',
-    bandName: '물수제비 🌊',
+    bandName: '물수제비',
     setLists: [
       {
         id: '1',
@@ -133,14 +126,7 @@ const LINEUP_INFO = [
         artist: '딕펑스',
       },
     ],
-    session: {
-      firstGuitar: '사진 🎸',
-      secondGuitar: '서진 🎸',
-      bass: '파도 🎸',
-      drum: '팬더 🥁',
-      keyboard: '레핑 🎹',
-      vocal: '두두, 사진, 서진 🎤',
-    },
+    member: ['두두', '사진', '서진', '파도', '팬더', '레핑'],
   },
   {
     id: '3',
@@ -178,7 +164,7 @@ const LINEUP_INFO = [
       },
       {
         id: '7',
-        title: '내가 사랑한 모든것들은 나를 눈물짓게 할테니까',
+        title: '내가 사랑한 모든것들은...',
         artist: '모브닝',
       },
       {
@@ -187,13 +173,6 @@ const LINEUP_INFO = [
         artist: '크라잉넛',
       },
     ],
-    session: {
-      firstGuitar: '승 🎸',
-      secondGuitar: '펭수, 세하 🎸',
-      bass: '세하, 펭수 🎸',
-      drum: '레이 🥁',
-      keyboard: '레아 🎹',
-      vocal: '승, 세하 🎤',
-    },
+    member: ['승', '세하', '펭수', '레이', '레아'],
   },
 ];
