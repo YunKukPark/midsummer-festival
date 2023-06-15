@@ -74,6 +74,8 @@ const Hero = () => {
             autoPlay
             loop
             muted
+            controls={false}
+            playsInline
           />
           <div className={`${css.stepWrapper} gap-16`} ref={stepWrapperRef}>
             {STEPS.map((step, i) => (
