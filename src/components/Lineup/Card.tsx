@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 type SetListType = {
@@ -27,7 +28,12 @@ const Card = (props: ICard) => {
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure>
-        <img src="https://picsum.photos/400" alt="Album" />
+        <Image
+          src="https://picsum.photos/400"
+          alt="Album"
+          width={600}
+          height={600}
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{bandName}</h2>
