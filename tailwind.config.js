@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-noto)'],
-        dohyeon: ['var(--font-dohyeon)'],
+        songmyung: ['var(--font-songmyung)'],
       },
     },
   },

@@ -41,12 +41,6 @@ const Card = (props: ICard) => {
             </div>
           ))}
         </div>
-        {/* <Image
-          src="https://picsum.photos/400"
-          alt="Album"
-          width={600}
-          height={600}
-        /> */}
       </figure>
       <div className="card-body gap-6 flex-1">
         <div className="title-wrapper flex flex-col gap-1">

@@ -66,8 +66,8 @@ const LINEUP_INFO = [
     ],
     member: ['지은', '은진', '예준', '혁균', '주영'],
     images: [
+      '/assets/images/jienjin/thumbnail.jpeg',
       '/assets/images/jienjin/001.jpeg',
-      '/assets/images/jienjin/002.jpeg',
       '/assets/images/jienjin/003.jpeg',
       '/assets/images/jienjin/004.jpeg',
     ],
@@ -119,6 +119,7 @@ const LINEUP_INFO = [
     ],
     member: ['두두', '사진', '서진', '파도', '팬더', '레핑'],
     images: [
+      '/assets/images/waterSujebi/thumbnail.jpeg',
       '/assets/images/waterSujebi/001.jpeg',
       '/assets/images/waterSujebi/002.jpeg',
       '/assets/images/waterSujebi/003.jpeg',
@@ -126,7 +127,6 @@ const LINEUP_INFO = [
       '/assets/images/waterSujebi/005.jpeg',
       '/assets/images/waterSujebi/006.jpeg',
       '/assets/images/waterSujebi/007.jpeg',
-      '/assets/images/waterSujebi/008.jpeg',
       '/assets/images/waterSujebi/009.jpeg',
       '/assets/images/waterSujebi/010.jpeg',
     ],
@@ -177,6 +177,12 @@ const LINEUP_INFO = [
       },
     ],
     member: ['승', '세하', '펭수', '레이', '레아'],
-    images: ['/assets/images/burzangmori/001.jpeg'],
+    images: [
+      '/assets/images/burzangmori/001.jpeg',
+      '/assets/images/burzangmori/002.jpeg',
+      '/assets/images/burzangmori/004.jpeg',
+      '/assets/images/burzangmori/003.jpeg',
+      '/assets/images/burzangmori/005.jpeg',
+    ],
   },
 ];

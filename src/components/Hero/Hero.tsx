@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { dohyeon } from '@/app/fonts';
+import { songmyung } from '@/app/fonts';
 import css from './Hero.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -78,12 +78,15 @@ const Hero = ({ id }: { id: string }) => {
             controls={false}
             playsInline
           />
-          <div className={`${css.stepWrapper} gap-16`} ref={stepWrapperRef}>
+          <div
+            className={`${css.stepWrapper} ${songmyung.className} gap-16`}
+            ref={stepWrapperRef}
+          >
             {STEPS.map((step, i) => (
               <h2
                 key={step + i}
                 ref={el => (stepRefs.current[i] = el!)}
-                className={`${dohyeon.className} ${css.heroText}`}
+                className={`${songmyung.className} ${css.heroText}`}
               >
                 {step}
               </h2>

@@ -1,4 +1,4 @@
-import { Do_Hyeon, Noto_Sans_KR } from 'next/font/google';
+import { Noto_Sans_KR, Song_Myung } from 'next/font/google';
 
 export const sansKr = Noto_Sans_KR({
   weight: ['400', '700', '900'],
@@ -7,9 +7,10 @@ export const sansKr = Noto_Sans_KR({
   variable: '--font-sans',
 });
 
-export const dohyeon = Do_Hyeon({
+export const songmyung = Song_Myung({
   weight: ['400'],
-  subsets: ['latin'],
+  preload: false,
+  // subsets: ['latin'],
   display: 'swap',
-  variable: '--font-dohyeon',
+  variable: '--font-songmyung',
 });
