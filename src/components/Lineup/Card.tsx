@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import css from './Card.module.css';
-import { ImageResponse } from 'next/server';
 
 type SetListType = {
   id: string;
@@ -14,10 +13,12 @@ interface ICard {
   setLists: SetListType[];
   member: string[];
   images: string[];
+  playListSrc: string;
 }
 
 const Card = (props: ICard) => {
-  const { bandName, setLists, member, images } = props;
+  const { bandName, setLists, member, images, playListSrc } = props;
+
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
       <figure className="flex flex-1 justify-items-center">
@@ -65,13 +66,15 @@ const Card = (props: ICard) => {
                 key={id}
                 className="overflow-hidden text-ellipsis whitespace-nowrap w-full text-base-content"
               >
-                <span>{title}</span> - <span>{artist}</span>
+                <span>• {title}</span> - <span>{artist}</span>
               </li>
             ))}
           </ul>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Listen</button>
+          <a className="btn btn-primary" href={playListSrc} target="_blank">
+            플리 예습하기 🚀
+          </a>
         </div>
       </div>
     </div>

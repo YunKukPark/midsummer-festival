@@ -71,6 +71,8 @@ const LINEUP_INFO = [
       '/assets/images/jienjin/003.jpeg',
       '/assets/images/jienjin/004.jpeg',
     ],
+    playListSrc:
+      'https://youtube.com/playlist?list=PLlpU4c_oe3mtj21PkgPsc7vH-V1MugQRi',
   },
   {
     id: '2',
@@ -130,6 +132,8 @@ const LINEUP_INFO = [
       '/assets/images/waterSujebi/009.jpeg',
       '/assets/images/waterSujebi/010.jpeg',
     ],
+    playListSrc:
+      'https://youtube.com/playlist?list=PLlpU4c_oe3muUBGPFh2GbCbZeWHoZWgbG',
   },
   {
     id: '3',
@@ -184,5 +188,7 @@ const LINEUP_INFO = [
       '/assets/images/burzangmori/003.jpeg',
       '/assets/images/burzangmori/005.jpeg',
     ],
+    playListSrc:
+      'https://youtube.com/playlist?list=PLlpU4c_oe3msSUrw2daBrpIRTzwINEEPV',
   },
 ];
