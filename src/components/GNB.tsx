@@ -26,10 +26,10 @@ const GNB = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>☀️ Midsummer</a>
+              <a href="#hero">☀️ Midsummer</a>
             </li>
             <li>
-              <a>🎹 Festival</a>
+              <a href="#line-up">🎹 Festival</a>
             </li>
           </ul>
         </div>
@@ -40,10 +40,10 @@ const GNB = () => {
         <div className="navbar-center hidden lg:flex ml-auto">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>☀️ Midsummer</a>
+              <a href="#hero">☀️ Midsummer</a>
             </li>
             <li>
-              <a>🎹 Festival</a>
+              <a href="#line-up">🎹 Festival</a>
             </li>
           </ul>
         </div>

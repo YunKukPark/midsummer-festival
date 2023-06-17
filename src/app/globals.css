@@ -9,3 +9,6 @@
   --background: #edf0ff;
 }
 /* TODO: reset 하기 */
+html {
+  scroll-behavior: smooth;
+}

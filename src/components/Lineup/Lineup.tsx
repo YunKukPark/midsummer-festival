@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from './Card';
 
-const Lineup = () => {
+const Lineup = ({ id }: { id: string }) => {
   return (
-    <section className="container lineup flex flex-col gap-8 py-8">
+    <section id={id} className="container lineup flex flex-col gap-8 py-8">
       {LINEUP_INFO.map(({ id, ...info }) => (
         <Card key={id} {...info} />
       ))}
@@ -25,56 +25,52 @@ const LINEUP_INFO = [
       },
       {
         id: '2',
-        title: '아틀란티스 소녀',
-        artist: '보아',
-      },
-      {
-        id: '3',
-        title: '사랑하게 될 줄 알았어',
-        artist: '전미도',
-      },
-      {
-        id: '4',
-        title: '바람',
-        artist: '최유리',
-      },
-      {
-        id: '5',
         title: '한번만',
         artist: '이지은',
       },
       {
-        id: '6',
-        title: '말해',
-        artist: '은진',
-      },
-      {
-        id: '7',
-        title: '연주곡',
-        artist: '지은진',
-      },
-      {
-        id: '8',
+        id: '3',
         title: '나의 사춘기에게',
         artist: '볼빨간 사춘기',
       },
       {
-        id: '9',
-        title: 'Eight(에잇)',
-        artist: '아이유',
+        id: '4',
+        title: '말해',
+        artist: '은진',
       },
       {
-        id: '10',
+        id: '5',
+        title: '밤하늘의 별을',
+        artist: '경서예지',
+      },
+      {
+        id: '6',
+        title: '아틀란티스 소녀',
+        artist: '보아',
+      },
+      {
+        id: '7',
         title: '보고싶었어',
         artist: 'WSG 워너비',
       },
       {
-        id: '11',
+        id: '8',
+        title: '좋은 사람 있으면 소개시켜줘',
+        artist: '미도와 파라솔',
+      },
+      {
+        id: '9',
         title: '사건의 지평선',
         artist: '윤하',
       },
     ],
     member: ['지은', '은진', '예준', '혁균', '주영'],
+    images: [
+      '/assets/images/jienjin/001.jpeg',
+      '/assets/images/jienjin/002.jpeg',
+      '/assets/images/jienjin/003.jpeg',
+      '/assets/images/jienjin/004.jpeg',
+    ],
   },
   {
     id: '2',
@@ -120,13 +116,20 @@ const LINEUP_INFO = [
         title: '예술이야',
         artist: '싸이',
       },
-      {
-        id: '9',
-        title: '좋다 좋아',
-        artist: '딕펑스',
-      },
     ],
     member: ['두두', '사진', '서진', '파도', '팬더', '레핑'],
+    images: [
+      '/assets/images/waterSujebi/001.jpeg',
+      '/assets/images/waterSujebi/002.jpeg',
+      '/assets/images/waterSujebi/003.jpeg',
+      '/assets/images/waterSujebi/004.jpeg',
+      '/assets/images/waterSujebi/005.jpeg',
+      '/assets/images/waterSujebi/006.jpeg',
+      '/assets/images/waterSujebi/007.jpeg',
+      '/assets/images/waterSujebi/008.jpeg',
+      '/assets/images/waterSujebi/009.jpeg',
+      '/assets/images/waterSujebi/010.jpeg',
+    ],
   },
   {
     id: '3',
@@ -164,7 +167,7 @@ const LINEUP_INFO = [
       },
       {
         id: '7',
-        title: '내가 사랑한 모든것들은...',
+        title: '내가 사랑한 모든것들은 나를 눈물짓게 할테니까',
         artist: '모브닝',
       },
       {
@@ -174,5 +177,6 @@ const LINEUP_INFO = [
       },
     ],
     member: ['승', '세하', '펭수', '레이', '레아'],
+    images: ['/assets/images/burzangmori/001.jpeg'],
   },
 ];

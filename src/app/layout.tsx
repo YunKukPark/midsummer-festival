@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" data-theme="night">
+    <html lang="ko" data-theme="dracula">
       <body className={sansKr.className}>
         <GNB />
         {children}

@@ -23,7 +23,7 @@ const STEPS = [
   '🎉 2023.06.24',
 ];
 
-const Hero = () => {
+const Hero = ({ id }: { id: string }) => {
   const [scrollHeight, setScrollHeight] = useState(0);
 
   const isClient = typeof window !== 'undefined';
@@ -63,7 +63,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-screen">
+    <section id={id} className="w-screen mb-10">
       <div className={css.videoContainer}>
         <div
           className={css.videoWrapper}
@@ -81,7 +81,7 @@ const Hero = () => {
           <div className={`${css.stepWrapper} gap-16`} ref={stepWrapperRef}>
             {STEPS.map((step, i) => (
               <h2
-                key={step}
+                key={step + i}
                 ref={el => (stepRefs.current[i] = el!)}
                 className={`${dohyeon.className} ${css.heroText}`}
               >

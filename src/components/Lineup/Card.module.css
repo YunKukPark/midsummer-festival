@@ -3,3 +3,14 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+.carouselImage {
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.carouselImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
