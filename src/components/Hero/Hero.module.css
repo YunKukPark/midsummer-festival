@@ -18,12 +18,18 @@
 .heroText {
   width: 100%;
   padding-top: 4rem /* 64px */;
-  font-size: 3.75rem /* 60px */;
+  font-size: 3.2rem /* 60px */;
   font-weight: 700;
   line-height: 1.4;
   color: #fff;
   text-align: center;
   word-break: keep-all;
+}
+
+.heroText:nth-child(2) {
+  background: -webkit-linear-gradient(45deg, #9796f0, #fbc7d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .stepWrapper {
@@ -33,7 +39,7 @@
   z-index: 20;
 }
 
-.stepWrapper .heroText:first-child {
+.stepWrapper .heroText:nth-child(2) {
   margin-bottom: 540px;
 }
 
@@ -43,7 +49,7 @@
     line-height: 1.6;
   }
 
-  .stepWrapper .heroText:first-child {
+  .stepWrapper .heroText:nth-child(2) {
     margin-bottom: 1000px;
   }
 }

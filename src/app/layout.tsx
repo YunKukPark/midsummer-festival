@@ -12,7 +12,7 @@ export const metadata = {
     siteName: '노래 하지 midsummer festival',
     type: 'website',
     images: [
-      'https://velog.velcdn.com/images/yunkuk/post/71766662-2c23-4e7c-b77c-38036c6e339d/image.jpeg',
+      'https://velog.velcdn.com/images/yunkuk/post/447f4fbc-3b05-4c1d-9dce-682d1b2a4212/image.png',
     ],
   },
 };

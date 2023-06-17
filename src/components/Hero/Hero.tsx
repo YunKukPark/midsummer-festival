@@ -9,9 +9,10 @@ import css from './Hero.module.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const STEPS = [
-  '☀️여름 🎹하지',
-  '🏖️ MIDNIGHT',
-  '🎏 SUMMER',
+  '☀️',
+  '노래 ,하지',
+  '🏖️ MIDSUMMER',
+  '🎏 FESTIVAL',
   '',
   '',
   '✨ 지은진',

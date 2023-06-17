@@ -4,6 +4,10 @@ import { Button, Hero } from 'react-daisyui';
 import CountDown from './CountDown';
 
 const LinkTree = () => {
+  const handleClickBuyTicket = () => {
+    window.open('https://forms.gle/DhMQduXmHYKdZYmF9', '_blank');
+  };
+
   return (
     <Hero
       className="w-screen px-6 py-8"
@@ -15,9 +19,11 @@ const LinkTree = () => {
       }}
     >
       <div className="w-full flex flex-col gap-4 items-center text-center">
-        <h1 className="text-2xl font-bold md:text-5xl">곧, 자리가 마감돼요</h1>
+        <h1 className="text-2xl font-bold md:text-5xl">👋 Hi, There</h1>
         <CountDown />
-        <Button color="primary">🎫 티켓 구매하기</Button>
+        <Button color="primary" onClick={handleClickBuyTicket}>
+          🎫 티켓 구매하기
+        </Button>
       </div>
     </Hero>
   );

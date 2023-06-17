@@ -47,7 +47,13 @@ const GNB = () => {
             </li>
           </ul>
         </div>
-        <a className="btn">🎟️🎫 공연 티켓</a>
+        <a
+          href="https://forms.gle/DhMQduXmHYKdZYmF9"
+          className="btn"
+          target="_blank"
+        >
+          🎟️🎫 공연 티켓
+        </a>
       </div>
     </div>
   );

@@ -28,7 +28,12 @@ const Card = (props: ICard) => {
       </figure>
       <div className="card-body gap-6">
         <div className="title-wrapper flex flex-col gap-1">
-          <h2 className="card-title">{bandName}</h2>
+          <h2 className="card-title ">
+            📍{' '}
+            <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
+              {bandName}
+            </span>
+          </h2>
           <ul className="flex gap-2 w-full">
             {member.map(name => (
               <li key={name}>{name}</li>
