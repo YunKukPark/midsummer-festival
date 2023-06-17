@@ -34,6 +34,7 @@ const Card = (props: ICard) => {
               {bandName}
             </span>
           </h2>
+          <hr className="my-2 border-none h-[1px] bg-gray-400" />
           <ul className="flex gap-2 w-full">
             {member.map(name => (
               <li key={name}>{name}</li>
