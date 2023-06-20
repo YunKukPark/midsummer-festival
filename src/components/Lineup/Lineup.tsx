@@ -182,6 +182,7 @@ const LINEUP_INFO = [
     ],
     member: ['승', '세하', '펭수', '레이', '레아'],
     images: [
+      '/assets/images/burzangmori/thumbnail.png',
       '/assets/images/burzangmori/001.jpeg',
       '/assets/images/burzangmori/002.jpeg',
       '/assets/images/burzangmori/004.jpeg',
