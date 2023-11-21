@@ -15,111 +15,61 @@ export default Lineup;
 
 const LINEUP_INFO = [
   {
-    id: '1',
-    bandName: '지은진',
-    setLists: [
-      {
-        id: '1',
-        title: 'Officially missing you',
-        artist: 'Tamia',
-      },
-      {
-        id: '2',
-        title: '한번만',
-        artist: '이지은',
-      },
-      {
-        id: '3',
-        title: '나의 사춘기에게',
-        artist: '볼빨간 사춘기',
-      },
-      {
-        id: '4',
-        title: '말해',
-        artist: '은진',
-      },
-      {
-        id: '5',
-        title: '밤하늘의 별을',
-        artist: '경서예지',
-      },
-      {
-        id: '6',
-        title: '아틀란티스 소녀',
-        artist: '보아',
-      },
-      {
-        id: '7',
-        title: '보고싶었어',
-        artist: 'WSG 워너비',
-      },
-      {
-        id: '8',
-        title: '좋은 사람 있으면 소개시켜줘',
-        artist: '미도와 파라솔',
-      },
-      {
-        id: '9',
-        title: '사건의 지평선',
-        artist: '윤하',
-      },
-    ],
-    member: ['지은', '은진', '예준', '혁균', '주영'],
-    images: [
-      '/assets/images/jienjin/thumbnail.jpeg',
-      '/assets/images/jienjin/001.jpeg',
-      '/assets/images/jienjin/003.jpeg',
-      '/assets/images/jienjin/004.jpeg',
-    ],
-    playListSrc:
-      'https://youtube.com/playlist?list=PLlpU4c_oe3mtj21PkgPsc7vH-V1MugQRi',
-  },
-  {
     id: '2',
     bandName: '물수제비',
     setLists: [
       {
         id: '1',
-        title: 'Dark Necessities',
-        artist: 'Red Hot Chili Peppers',
+        title: 'Start',
+        artist: 'Depapepe',
       },
       {
         id: '2',
-        title: "Can't Take My Eyes Off You",
-        artist: 'MUSE',
+        title: '시작',
+        artist: '가호',
       },
       {
         id: '3',
-        title: '우리의 밤은 당신의 낮보다 아름답다',
-        artist: '너도 나도 너드',
+        title: '꿈나라별나라',
+        artist: '잔나비',
       },
       {
         id: '4',
-        title: 'Shooting Stars',
-        artist: '엔플라잉',
+        title: '소멸탈출',
+        artist: '넬 (NELL)',
       },
       {
         id: '5',
-        title: '오르트구름',
-        artist: '윤하',
+        title: '흰수염고래',
+        artist: 'YB',
       },
       {
         id: '6',
-        title: 'Piano Man',
-        artist: 'Billy Joel',
+        title: 'Californication',
+        artist: 'RHCP',
       },
       {
         id: '7',
-        title: '그대에게',
-        artist: '신해철',
+        title: '풍문으로 들었소',
+        artist: '장기하와 얼굴들',
       },
       {
         id: '8',
-        title: '예술이야',
-        artist: '싸이',
+        title: '30/90',
+        artist: 'Andrew',
+      },
+      {
+        id: '9',
+        title: 'We Are The One',
+        artist: 'PSY',
+      },
+      {
+        id: '10',
+        title: '그대에게',
+        artist: '신해철',
       },
     ],
-    member: ['두두', '사진', '서진', '파도', '팬더', '레핑'],
+    member: ['두두', '사진', '서진', '파도', '형빈', '레핑'],
     images: [
       '/assets/images/waterSujebi/thumbnail.jpeg',
       '/assets/images/waterSujebi/001.jpeg',
@@ -132,6 +82,7 @@ const LINEUP_INFO = [
       '/assets/images/waterSujebi/009.jpeg',
       '/assets/images/waterSujebi/010.jpeg',
     ],
+    // TODO: 플레이리스트 수정
     playListSrc:
       'https://youtube.com/playlist?list=PLlpU4c_oe3muUBGPFh2GbCbZeWHoZWgbG',
   },
@@ -141,8 +92,8 @@ const LINEUP_INFO = [
     setLists: [
       {
         id: '1',
-        title: '좋다',
-        artist: '데이브레이크',
+        title: '밤은 짧아 걸어 아가씨야',
+        artist: '로맨틱펀치',
       },
       {
         id: '2',
@@ -161,26 +112,36 @@ const LINEUP_INFO = [
       },
       {
         id: '5',
-        title: 'See Your Eyes',
-        artist: '잔나비',
+        title: 'Radio',
+        artist: '트랜스픽션',
       },
       {
         id: '6',
+        title: 'Destiny',
+        artist: 'SURL',
+      },
+      {
+        id: '7',
+        title: '촛불하나',
+        artist: '칠전팔기 OST',
+      },
+      {
+        id: '8',
         title: 'Butterfly',
         artist: '전용호',
       },
       {
-        id: '7',
-        title: '내가 사랑한 모든것들은 나를 눈물짓게 할테니까',
-        artist: '모브닝',
+        id: '9',
+        title: '캐롤',
+        artist: '',
       },
       {
-        id: '8',
-        title: '좋지 아니한가',
-        artist: '크라잉넛',
+        id: '10',
+        title: '친구들과 바다에서 (가제)',
+        artist: '박세하',
       },
     ],
-    member: ['승', '세하', '펭수', '레이', '레아'],
+    member: ['승', '예명', '세하', '펭수', '레이', '레아'],
     images: [
       '/assets/images/burzangmori/thumbnail.png',
       '/assets/images/burzangmori/001.jpeg',
