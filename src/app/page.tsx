@@ -1,5 +1,4 @@
 import Footer from '@/components/Footer';
-import Hero from '@/components/Hero/Hero';
 import HeroV2 from '@/components/HeroV2/HeroV2';
 import Lineup from '@/components/Lineup/Lineup';
 import LinkTree from '@/components/LinkTree';
