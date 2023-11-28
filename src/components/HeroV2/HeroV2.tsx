@@ -4,13 +4,14 @@ import { useEffect, useRef } from 'react';
 
 const HeroV2 = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  const aspectRatio = 16 / 9;
+  const lastWidth = useRef(window.innerWidth); // 이전 너비 저장
 
   const handleResize = () => {
     const canvas = canvasRef.current!;
     const width = window.innerWidth;
     const height = window.innerHeight;
+
+    if (width === lastWidth.current) return;
 
     if (width < height) {
       // 모바일 환경(세로 모드)일 때 9:16 비율 적용

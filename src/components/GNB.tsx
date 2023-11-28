@@ -49,7 +49,7 @@ const GNB = () => {
         </div>
         <a
           href="https://forms.gle/e7nsj2fst4uwTHRC9"
-          className="btn"
+          className="btn btn-primary"
           target="_blank"
         >
           🎟️🎫 공연 티켓
