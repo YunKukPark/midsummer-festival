@@ -6,7 +6,7 @@ import { Footer as _Footer } from 'react-daisyui';
 const Footer = () => {
   return (
     <footer className="w-screen p-10 bg-neutral text-neutral-content text-center">
-      © 2023, 계절 절기
+      © 2023, 노래 절기
     </footer>
   );
 };

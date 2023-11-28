@@ -12,7 +12,7 @@ const LinkTree = () => {
     <Hero
       className="w-screen px-6 py-8"
       style={{
-        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/linktree_bg.jpg')`,
+        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/winter-linktree-bg.jpg')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
