@@ -5,7 +5,7 @@ import CountDown from './CountDown';
 
 const LinkTree = () => {
   const handleClickBuyTicket = () => {
-    window.open('https://forms.gle/DhMQduXmHYKdZYmF9', '_blank');
+    window.open('https://forms.gle/e7nsj2fst4uwTHRC9', '_blank');
   };
 
   return (

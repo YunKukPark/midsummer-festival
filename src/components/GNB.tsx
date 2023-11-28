@@ -26,21 +26,21 @@ const GNB = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a href="#hero">☀️ Midsummer</a>
+              <a href="#hero">⛄️ Midwinter</a>
             </li>
             <li>
               <a href="#line-up">🎹 Festival</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">노래🎶 하지☀️</a>
+        <a className="btn btn-ghost normal-case text-xl">노래🎶 동지⛄️</a>
       </div>
 
       <div className="navbar-end">
         <div className="navbar-center hidden lg:flex ml-auto">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a href="#hero">☀️ Midsummer</a>
+              <a href="#hero">⛄️ Midwinter</a>
             </li>
             <li>
               <a href="#line-up">🎹 Festival</a>
@@ -48,7 +48,7 @@ const GNB = () => {
           </ul>
         </div>
         <a
-          href="https://forms.gle/DhMQduXmHYKdZYmF9"
+          href="https://forms.gle/e7nsj2fst4uwTHRC9"
           className="btn"
           target="_blank"
         >

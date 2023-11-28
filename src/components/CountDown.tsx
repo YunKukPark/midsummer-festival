@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const D_DAY = new Date('2023-06-24T00:00:00+09:00');
+const D_DAY = new Date('2023-12-09T17:00:00+09:00');
 
 const CountDown = () => {
   // count down hook 여기서 밖에 사용안해서 굳이 나눌 필요는 없을 듯
