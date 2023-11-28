@@ -84,7 +84,7 @@ const LINEUP_INFO = [
     ],
     // TODO: 플레이리스트 수정
     playListSrc:
-      'https://youtube.com/playlist?list=PLlpU4c_oe3muUBGPFh2GbCbZeWHoZWgbG',
+      'https://youtube.com/playlist?list=PLjfcbdZ779kOuRWjwTNOTwI3OQluG27ru&si=qLqJDs6n5x_gbOLT',
   },
   {
     id: '3',

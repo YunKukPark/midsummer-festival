@@ -2,18 +2,24 @@
 import { Application } from '@splinetool/runtime';
 import { useEffect, useRef } from 'react';
 
+const BREAKPOINT = 768;
+
 const HeroV2 = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const lastWidth = useRef(window.innerWidth); // 이전 너비 저장
+  const latestInnerSize = useRef({
+    width: 1920,
+    height: 1080,
+  });
 
   const handleResize = () => {
     const canvas = canvasRef.current!;
     const width = window.innerWidth;
     const height = window.innerHeight;
 
-    if (width === lastWidth.current) return;
+    if (width === latestInnerSize.current.width) return;
 
-    if (width < height) {
+    console.log('여기 옴?');
+    if (width < BREAKPOINT) {
       // 모바일 환경(세로 모드)일 때 9:16 비율 적용
       const mobileHeight = height * 0.8;
       canvas.width = (mobileHeight * 9) / 16;
@@ -23,6 +29,7 @@ const HeroV2 = () => {
       canvas.width = width;
       canvas.height = width / (16 / 9);
     }
+    latestInnerSize.current = { width, height };
   };
 
   useEffect(() => {
@@ -37,7 +44,7 @@ const HeroV2 = () => {
   }, []);
 
   return (
-    <section className="w-screen">
+    <section className="w-screen overflow-hidden">
       <div
         style={{
           position: 'relative',
