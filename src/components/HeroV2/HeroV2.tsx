@@ -9,10 +9,19 @@ const HeroV2 = () => {
 
   const handleResize = () => {
     const canvas = canvasRef.current!;
-    const width = window.innerWidth; // 뷰포트의 전체 너비
-    const height = width / aspectRatio; // 16:9 비율로 높이 계산
-    canvas.width = width;
-    canvas.height = height;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    if (width < height) {
+      // 모바일 환경(세로 모드)일 때 9:16 비율 적용
+      const mobileHeight = height * 0.8;
+      canvas.width = (mobileHeight * 9) / 16;
+      canvas.height = mobileHeight - 150;
+    } else {
+      // 데스크탑 환경일 때 16:9 비율 적용
+      canvas.width = width;
+      canvas.height = width / (16 / 9);
+    }
   };
 
   useEffect(() => {
